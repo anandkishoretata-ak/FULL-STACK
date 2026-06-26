@@ -1,0 +1,163 @@
+div{
+    display: block;
+}
+span{
+    display: inline-block;
+    width: 200px;
+    height: 100px;
+    background-color: brown; 
+}
+
+
+/* div{ */
+    /* visibility: hidden; */
+    /* overflow: hidden;
+    overflow: auto;
+} */
+/* position properties */
+/* div{ */
+    /* position: static; */
+    /* position: relative;
+    top: 1px;
+    left: 20px;  
+} */
+
+/* .parent{
+    position: relative;
+}
+.child{
+    position:absolute;
+    top: 0;
+    right: 0;
+}
+div{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+h1{
+   position: sticky;
+   top:0;
+} */
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+.item{
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    background-color: rgb(215, 75, 11);
+}
+/*wrap
+
+1 2 3 4 5 6 7 8
+wrap:
+1 2 3 4 
+5 6 7 8*/
+nav{
+    display: left;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+}
+ul{
+    display:flex;
+    gap: 20px;
+    list-style:none;
+}
+/* flexbox:row or column
+css grid:rows & columns */
+.container1{
+    display: grid;
+    /* create the columns */
+    /* grid-template-columns: 200px 200px 200px 200px; */
+    /* grid-template-rows: 100px 100px 100px 100px; */
+    /* grid-template-columns:repeat(autofit,minmax(200px,1fr)) ; */
+    gap: 20px;
+    grid-template-areas: "header header"
+    "sidebar content" 
+    "footer footer";
+}
+.item1{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+}
+body{
+    background-color: rgb(238, 15, 230);
+    
+    background-image:url(Gemini_Generated_Image_vlar3uvlar3uvlar.png) ;
+    background-size: contain;
+    background-position: center;
+
+    background-repeat: repeat-x;
+}
+h1{
+    text-shadow: 5px 2px 10px rgb(13, 3, 52);
+
+
+}
+botton:hover{
+    background: red;
+    color: aqua;
+}
+input{
+    padding: 10px;
+    border:2px solid white;
+    border-radius: 5px;
+    outline: none;
+
+}
+input:focus{
+    border: 2px solid blue;
+}
+button:active{
+    transform: scale(0.95);
+}
+.box{
+    /* width: 100px;
+    height: 50px;
+    background: red; */
+    /* transform: rotate(45deg); */
+
+    transform:scale(1.5);
+}
+.card{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    transform:scale(1.1) ;
+}
+.card{
+    transform: skew(20deg);
+}
+.card{
+    transform: translateY(-10px)
+    scale(1.1)
+    rotate(5deg);
+
+}
+.newbtn{
+    background: brown;
+    
+    
+
+}
+.newbtn:hover{
+    background: rgb(59, 13, 213);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+}

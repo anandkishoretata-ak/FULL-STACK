@@ -1,0 +1,47 @@
+h1{
+    color: rgb(175, 15, 219);
+    font-style: italic;
+}
+p{
+    color: antiquewhite;
+    background-color: rgb(227, 36, 106);
+}
+/* class selector */
+.title{
+    color: rgb(194, 227, 27);
+
+ }
+ /* /id selector */
+ #main-heading{
+    color: rgb(16, 34, 200);
+ }
+ h1,p,botton{
+    color: azure;
+ }
+ div li{
+    color: black;
+ }
+ /* child selector */
+ div > li{
+    color: azure;
+ }
+ /* Attribute selector */
+ input[type="text"]{
+    background-color: blanchedalmond;
+ }
+ input[type="password"]{
+    background-color: brown;
+ }
+ h1{
+    color: rgb(190, 70, 70);
+    /* color: #RRGGBB; */
+ }
+ h1{
+    /* color: #0000ff; */
+    /* RGB->0--255 */
+    color: rgb(225,255,255);
+ }
+ 
+ p{
+    font-style: 40px;
+ }

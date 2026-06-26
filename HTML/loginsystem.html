@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Basic Login Form</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#00bcd4,#0033cc);
+    color:#fff;
+    position:relative;
+}
+
+.container{
+    text-align:center;
+}
+
+.title{
+    font-size:42px;
+    letter-spacing:3px;
+    margin-bottom:40px;
+    font-weight:300;
+}
+
+.login-box{
+    width:450px;
+    background:#063596;
+    padding:40px;
+    position:relative;
+    box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+.close-small{
+    position:absolute;
+    top:10px;
+    right:15px;
+    font-size:24px;
+    cursor:pointer;
+}
+
+.login-box h2{
+    margin-bottom:30px;
+    font-weight:500;
+}
+
+.input-group{
+    position:relative;
+    margin-bottom:15px;
+}
+
+.input-group i{
+    position:absolute;
+    left:12px;
+    top:50%;
+    transform:translateY(-50%);
+    color:#333;
+}
+
+.input-group input{
+    width:100%;
+    padding:12px 12px 12px 40px;
+    border:none;
+    outline:none;
+    background:#fff;
+}
+
+.login-btn{
+    width:100%;
+    padding:13px;
+    border:none;
+    background:#1fd3d3;
+    color:#fff;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+    margin-top:20px;
+}
+
+.login-btn:hover{
+    background:#18bcbc;
+}
+
+.forgot{
+    display:block;
+    margin-top:20px;
+    color:#fff;
+    text-decoration:none;
+    font-size:14px;
+}
+
+.footer{
+    margin-top:40px;
+    font-size:14px;
+}
+
+.big-close{
+    position:absolute;
+    top:30px;
+    right:40px;
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    background:#001f6b;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:60px;
+    color:white;
+}
+
+.camera{
+    position:absolute;
+    bottom:30px;
+    left:30px;
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    background:#001f6b;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:40px;
+}
+</style>
+</head>
+<body>
+
+<div class="big-close">
+    <i class="fas fa-times"></i>
+</div>
+
+<div class="camera">
+    <i class="fas fa-camera"></i>
+</div>
+
+<div class="container">
+    <h1 class="title">BASIC LOGIN FORM</h1>
+
+    <div class="login-box">
+        <span class="close-small">&times;</span>
+
+        <h2>LOGIN</h2>
+
+        <div class="input-group">
+            <i class="fas fa-user"></i>
+            <input type="text" placeholder="Username">
+        </div>
+
+        <div class="input-group">
+            <i class="fas fa-key"></i>
+            <input type="password" placeholder="Password">
+        </div>
+
+        <button class="login-btn">LOGIN</button>
+
+        <a href="#" class="forgot">Forgot Password?</a>
+    </div>
+
+    <div class="footer">
+        © 2017 Basic Login Form. All Rights Reserved | Design by W3layouts
+    </div>
+</div>
+
+</body>
+</html>

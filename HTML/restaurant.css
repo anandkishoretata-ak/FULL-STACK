@@ -1,0 +1,118 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-image:url(restaurant.jpeg);
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    min-height:100vh;
+    color:white;
+}
+
+/* Header */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:25px 60px;
+}
+
+.logo h2{ 
+    font-size:32px;
+    font-weight:bold;
+}
+
+.logo p{
+    font-size:12px;
+    letter-spacing:4px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:35px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    color:#f4c430;
+}
+
+/* Hero Section */
+
+.hero{
+    height:80vh;
+    display:flex;
+    align-items:center;
+    padding-left:60px;
+}
+
+.content{
+    max-width:500px;
+}
+
+.content h1{
+    font-size:80px;
+    font-weight:900;
+    line-height:1.1;
+    margin-bottom:30px;
+}
+
+.content p{
+    font-size:18px;
+    line-height:1.8;
+    margin-bottom:30px;
+}
+
+button{
+    background:#f4c430;
+    color:black;
+    border:none;
+    padding:15px 35px;
+    font-size:18px;
+    font-weight:bold;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#ffd84d;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+    header{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    nav ul{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero{
+        padding:30px;
+    }
+
+    .content h1{
+        font-size:50px;
+    }
+
+    .content p{
+        font-size:15px;
+    }
+}

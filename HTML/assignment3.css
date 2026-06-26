@@ -1,0 +1,236 @@
+:root{
+    --hospital-color:#0077b6;
+    --accent-color:#00b4d8;
+    --text-color:#333;
+    --border-color:#dcdcdc;
+    --background:#f4f9fc;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:var(--background);
+    color:var(--text-color);
+}
+
+/* Header */
+header{
+    height:100vh;
+    background:
+        linear-gradient(rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)),
+        url("images.jpeg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    color:white;
+}
+
+/* Navigation */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    text-decoration:none;
+    color:white;
+    padding:10px 15px;
+    border:2px solid transparent;
+    transition:0.4s;
+}
+
+nav ul li a:hover{
+    background:var(--accent-color);
+    border-color:white;
+    border-radius:5px;
+    color:black;
+}
+
+/* Hero */
+.hero-content{
+    text-align:center;
+    margin-top:200px;
+}
+
+.hero-content h1{
+    font-size:50px;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:22px;
+    margin-bottom:30px;
+}
+
+/* Buttons */
+button{
+    background:var(--hospital-color);
+    color:white;
+    border:none;
+    padding:15px 30px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.4s;
+}
+
+button:hover{
+    background:var(--accent-color);
+    transform:scale(1.08);
+}
+
+/* Doctors Section */
+.doctors{
+    padding:60px 10%;
+    text-align:center;
+}
+
+.doctor-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+    margin-top:40px;
+}
+
+.doctor-card{
+    width:280px;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 4px 10px rgba(0,0,0,0.1);
+    transition:0.5s;
+}
+
+.doctor-card img{
+    width:100%;
+}
+
+.doctor-card h3{
+    margin-top:15px;
+}
+
+.doctor-card p{
+    padding-bottom:20px;
+}
+
+.doctor-card:hover{
+    transform:scale(1.05) translateY(-10px);
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* Appointment Form */
+.appointment{
+    padding:60px 10%;
+    text-align:center;
+}
+
+form{
+    max-width:500px;
+    margin:auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+
+    animation:slideLeft 1.5s ease;
+}
+
+form input,
+form select{
+    padding:15px;
+    border:1px solid var(--border-color);
+    border-radius:8px;
+}
+
+@keyframes slideLeft{
+    from{
+        opacity:0;
+        transform:translateX(-100px);
+    }
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+/* Emergency Section */
+.emergency{
+    background:red;
+    color:white;
+    text-align:center;
+    padding:25px;
+    font-size:22px;
+    font-weight:bold;
+    animation:pulse 1s infinite;
+}
+
+@keyframes pulse{
+    0%{
+        opacity:1;
+    }
+    50%{
+        opacity:0.5;
+    }
+    100%{
+        opacity:1;
+    }
+}
+
+/* Mobile */
+@media(max-width:767px){
+
+    nav{
+        flex-direction:column;
+    }
+
+    nav ul{
+        flex-direction:column;
+        margin-top:20px;
+        text-align:center;
+    }
+
+    nav ul li{
+        margin:10px 0;
+    }
+
+    .hero-content h1{
+        font-size:35px;
+    }
+}
+
+/* Tablet */
+@media(min-width:768px) and (max-width:1024px){
+
+    .doctor-container{
+        gap:20px;
+    }
+
+    .hero-content h1{
+        font-size:45px;
+    }
+}
+
+/* Desktop */
+@media(min-width:1025px){
+
+    .doctor-container{
+        justify-content:space-around;
+    }
+}
