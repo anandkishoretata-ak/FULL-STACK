@@ -1,0 +1,199 @@
+<!-- 
+avaScript (JS) is a lightweight, cross-platform,
+ and interpreted programming language primarily used to create interactive 
+ and dynamic web content. Alongside HTML and CSS, 
+it is one of the three core technologies powering the World Wide Web
+
+
+ html->structural
+ css->styling
+ js->funtionlity
+ 
+execution flow:
+souurce code
+      |
+interpreter
+     |
+ machine executes one line
+ at a time with jit
+     |
+  machine code
+
+  jit :is a technique where code is compiled into 
+  machine code while the program is running
+  ->instead of compiling everything before hand            
+
+  JIT comiler:Identifies frequently
+  executed code
+("HOT Code")
+It compilers that code
+into optimized machine code
+
+JavaScript(v8 engine in chrome and nodejs)
+java--jvm
+how js works in browser:
+HTML FILE
+   |
+Browser
+   |
+HTML parser
+   |
+DOM Created
+   |
+java script engine(js)
+   |
+page updated               
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Explanation</title>
+</head>
+<body>
+    <h1>welcome to chalapathi</h1>
+    <!-- <button onclick="showmessage()">click me</button> -->
+    <script>
+        // variables:
+        // var,let,const-->keywords
+        var account_num=7645677
+        let a=10;
+        let b=20;
+        console.log(a);
+        console.log(b);
+        const year=2004;
+        const pi=3.14;
+        console.log(pi)
+        var account_num=712239882;
+        console.log(account_num)
+        // var first_name="anand"
+        // console.log(first_name)
+        //data type:
+        //1.strings
+        let name="name";
+        console.log(typeof name)
+        //2.number
+        let num=20;
+        console.log(typeof num)
+        //3.boolean:
+        let isStudent=true;
+        console.log(typeof isStudent)
+        //4.undefined:
+        let salary;
+        console.log(typeof salary)
+        //5.null
+        let data=null;
+        console.log(typeof data)
+        //6.object 
+        let student={
+            name:"anand",
+            rollno:8
+        };
+        console.log(typeof student)
+        //operators:
+        let x=5;
+        let y=6;
+        console.log(x+y)
+        //Assignment operators
+        let d = 5;
+        d+=5
+        console.log(d)
+        //comparison operators:
+        //<,>.....
+        //strictly equal to
+        console.log(x==y)
+        //logical operators:
+        //&&,|,!
+        // console.log(alert("welcome to fullstack"))
+        //prompt:
+        // let number=prompt("enter the number:")
+        // console.log(number)
+
+        // let result=confirm("Are you sure")
+
+        //template literal
+        // let myname="anand"
+        // console.log("hello" + myname);
+        // console.log(`"hello ${myname}"`);
+
+        //task:take two numbers from user
+        // perform addition,sub,mul,div
+        // make sure to use template literals
+        // let  g=prompt("enter the number:")
+        // let  h=prompt("enter the number:")
+        // z=g+h
+        // i=g-h
+        // o=g*h
+        // k=g/h
+        // console.log(z)
+        // console.log(i)
+        // console.log(o)
+        // console.log(k)
+        //print mutipllication table of 7
+    // use template literals
+    let n=7;
+    for(let i=1;i<10;i++){
+        console.log(`${n}x${i}=${n*i}`)
+    }
+    
+    // 2.do the sum of all odd numberss
+    // from 5-50
+    let total=0;
+    for(let i=1;i<=5;i+=2){
+        total+=i
+    }
+    console.log(total)
+    //find the fact of 6
+
+    let factorial=1;
+    for (let i=6;i>=1;i--){
+         factorial*=i;
+    } 
+    console.log(factorial)     
+    // while loop:
+    let i=1;
+    while(i<=5){
+        console.log(i)
+        i++;
+    }
+    
+// do -while
+    let password;
+    do{
+        password=prompt("enter the password:")
+    }while(password!=1234){
+        console.log("login success")
+    }
+    // break:immediately terminate the loop
+    for (let i=0;i<5;i++){
+        if(i==5){
+            break;
+        }
+        console.log(i)
+    }
+// continue :skips the current iteratate
+for(let i=1;i<=10;i++){
+    if(i==5){
+        continue
+    }
+    console.log(i);
+}
+// do the sum of first
+let h = number(prompt("enter the numbers"))
+let sum=0
+for (let j=1;j>=n;j++){
+    sum=sum+j
+}
+console.log(sum)
+    
+    
+
+    
+
+
+
+    </script>
+</body>
+</html>
